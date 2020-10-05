@@ -251,6 +251,7 @@ main {
     right: 0;
     z-index: 99;
     width: 100%;
+    bottom: 102px;
 }
 
 .main-wrap {
@@ -260,7 +261,46 @@ main {
 
 .main-wrap figure {
     position: absolute;
-    right: 0;
+    margin-left: -500px;
+    bottom: 0;
+}
+
+.main-wrap h2 {
+    position: absolute;
+    font-size: 35px;
+    color: rgb(156, 9, 9);
+    text-shadow: black 1px 1px;
+    width: 50%;
+    margin: auto;
+    margin-left: -500px;
+}
+
+.main-wrap h2:nth-child(1) {
+    animation: slide-h2 1s forwards;
+}
+
+@keyframes slide-h2 {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+.main-wrap .sad-sona {
+    animation: slider 1s;
+    animation-fill-mode: forwards;
+    bottom: -10px;
+}
+
+@keyframes slider {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 0px;
+    }
 }
 
 
@@ -294,7 +334,10 @@ footer {
 }
 
 .bread-items figure {
-    width: 80%;
+    width: 60%;
+    position: absolute;
+    margin-left: -500px;
+    bottom: 0;
 }
 
 .bread-items figure img {
@@ -302,8 +345,10 @@ footer {
 }
 
 .bread-items figure:nth-child(1) {
-    position: relative;
+    position: absolute;
     animation: movein 1s;
+    animation-fill-mode: forwards;
+    bottom: -95px;
 }
 
 @keyframes movein {
@@ -311,7 +356,7 @@ footer {
         left: -500px;
     }
     to {
-        left: 0px;
+        left: 500px;
     }
 }
 
