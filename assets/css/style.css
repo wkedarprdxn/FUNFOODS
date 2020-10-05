@@ -246,6 +246,23 @@ header figure {
   main styling starts here
 =================================*/
 
+main {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.main-wrap {
+    position: relative;
+    right: 0;
+}
+
+.main-wrap figure {
+    position: absolute;
+    right: 0;
+}
+
 
 /*=================================
   main styling ends here
@@ -264,6 +281,10 @@ footer {
 
 .footer-wrap {
     position: relative;
+}
+
+.table img {
+    height: fit-content;
 }
 
 .bread-items {
@@ -316,6 +337,9 @@ footer {
     header figure {
         width: 20%;
         margin: 0 auto;
+    }
+    .bread-items figure {
+        width: 60%;
     }
 }
 
