@@ -242,6 +242,46 @@ header figure {
 =================================*/
 
 
+/* ----------------TEXT-SECTION------------------- */
+
+.text-content {
+    position: relative;
+    margin: 100px 0px;
+}
+
+.text-content h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(209, 15, 15);
+    text-shadow: rgb(46, 5, 5) 1px 1px;
+}
+
+.text-content h2,
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 500%;
+    transform: translate(-50%, -50%);
+}
+
+.text-content h2:nth-child(1) {
+    animation: slide-h2-text 1s forwards;
+}
+
+@keyframes slide-h2-text {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+
+/* ----------------TEXT-SECTION END------------------- */
+
+
 /*=================================
   main styling starts here
 =================================*/
